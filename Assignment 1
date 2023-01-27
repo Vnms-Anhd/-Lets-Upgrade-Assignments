@@ -1,0 +1,24 @@
+#include <iostream>
+
+int main() {
+    int M;
+    std::cin>>M;
+    
+    if (M % 3 == 0 && M % 5 == 0) {
+    std::cout << "Good Number";
+    }
+    
+    else if (M % 3 == 0 && M % 5 != 0) {
+    std::cout << "Bad Number";
+    }
+    
+    else if (M % 5 == 0 && M % 3 != 0) {
+    std::cout << "Poor Number";
+    }
+    
+    else {
+    std::cout << "-1";
+    }
+
+    return 0;
+}
